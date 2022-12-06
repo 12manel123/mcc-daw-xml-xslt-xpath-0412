@@ -1,0 +1,109 @@
+body{
+	background-image: url("fondo.jpg") ;
+	background-position: 50%;
+}
+
+
+img.logo{
+	margin-left: 10%;
+	width: 250px;
+	float: left;
+	margin-bottom: 1%;
+}
+
+img.central{
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	padding-top: 0.2%;
+	padding-bottom: 0.2%;
+	padding-right: 0.2%;
+	padding-left: 0.2%;
+	border: solid black;
+	border-color:#dadada;
+}
+
+ul{
+	text-align: right;
+	margin-right: 10%;
+}
+
+
+.enlace li, .enlace2 li{
+	display:inline;
+    padding-left:1%;
+
+}
+.div1 .enlace{
+	margin-top:20px;
+}
+
+a{
+	position: relative;
+	font-weight: bold;
+	font-size:100%;
+	
+}
+a:link {
+  color: #181818;
+}
+a:hover {
+  color: #181818;
+}
+a:visited {
+  color: #181818;
+}
+a:active {
+  color: #5f0000;
+}
+
+h2,th{
+	text-align: center;
+	font-weight: bold;
+	font-size:150%;
+}
+
+th {
+	font-size:90%;
+	color: #c20000;
+}
+
+
+
+.videos h2 {
+	text-align: left;
+}
+
+h3 {
+	text-align: center;
+	font-weight: bold;
+	font: bold 140% monospace;
+}
+
+td{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 0.2%;
+	padding-bottom: 0.2%;
+	padding-right: 0.2%;
+	padding-left: 0.2%;
+	border: solid black;
+	border-color:#dadada;
+	font: bold 80% monospace;
+}
+
+
+.lobul1{
+	width: 30%;
+	float: left;
+}
+
+.tabla img{
+	margin-left: 35%;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+hr {
+	border-color:#dadada;
+	margin-left: 8%;
+}

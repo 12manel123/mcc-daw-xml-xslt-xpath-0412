@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang ="es">
+
+<head>
+<title>Capitulo7</title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<h1>Capítulo 7. Tablas</h1>
+<h4><a href="index_DocTreball.html" title="Index">Index</a></h4>
+
+<h3>Figura 7.2: Tabla sencilla</h3>
+<h1>Listado de cursos</h1>
+
+<table>
+<tr>
+  <td><strong>Curso</strong></td>
+  <td><strong>Horas</strong></td>
+  <td><strong>Horario</strong></td>
+</tr>
+
+<tr>
+  <td>CSS</td>
+  <td>20</td>
+  <td>16:00 - 20:00</td>
+</tr>
+
+<tr>
+  <td>HTML</td>
+  <td>20</td>
+  <td>16:00 - 20:00</td>
+</tr>
+
+<tr>
+  <td>Dreamweaver</td>
+  <td>60</td>
+  <td>16:00 - 20:00</td>
+</tr>
+</table>
+<br>
+
+<h3>Figura 7.3 (Exercici11): Tabla sencilla2</h3>
+<h1>Su pedido</h1>
+<table>
+  <tr>
+    <th scope="col">Nombre producto</th>
+    <th scope="col">Precio unitario</th>
+    <th scope="col">Unidades</th>
+    <th scope="col">Subtotal</th>
+  </tr>
+
+  <tr>
+    <td>Reproductor MP3 (80 GB)</td>
+    <td>192.02</td>
+    <td>1</td>
+    <td>192.02</td>
+  </tr>
+
+  <tr>
+    <td>Fundas de colores</td>
+    <td>2.50</td>
+    <td>5</td>
+    <td>12.50</td>
+  </tr>
+
+  <tr>
+    <td>Reproductor de radio &amp; control remoto</td>
+    <td>12.99</td>
+    <td>1</td>
+    <td>12.99</td>
+  </tr>
+
+  <tr>
+    <th scope="row">TOTAL</th>
+    <td>-</td>
+    <td>7</td>
+    <td><strong>207.51</strong></td>
+  </tr>
+</table>
+<br>
+
+
+
+<h3>Figura 7.3 (Exercici11): Tabla sencilla2</h3>
+<h1>Resultado de la búsqueda</h1>
+
+<table>
+  <caption>Resultado de la búsqueda</caption>
+  <tr>
+    <th abbr="Imagen del producto" scope="col">Imagen</th>
+    <th abbr="Datos del producto" scope="col">Datos</th>
+  </tr>
+
+  <tr>
+    <td>
+      <img src="imagenes/portatil.png" alt="Imagen del ordenador portátil" />
+    </td>
+    <td>
+      <h4><a href="#" title="Ver más información sobre el portátil">Portátil - 3 GHz - 4 GB RAM</a></h4>
+      <p><a href="#" title="Comprar el portátil">Comprar:</a> <del>2.990 &euro;</del> <strong>2.599 &euro;</strong></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td><img src="imagenes/videocamara.png" alt="Imagen de la videocámara" /></td>
+    <td>
+      <h4><a href="#" title="Ver más información sobre la videocámara">Videocámara - Alta definición 1080p - 60 GB</a></h4>
+      <p><a href="#" title="Comprar la videocámara">Comprar:</a> <del>1.099 &euro;</del> <strong>999 &euro;</strong></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td><img src="imagenes/tv.png" alt="Imagen del televisor" /></td>
+    <td>
+      <h4><a href="#" title="Ver más información sobre el televisor">Televisor - 46" - Full HD</a></h4>
+      <p><a href="#" title="Comprar el televisor">Comprar:</a> <del>1.999 &euro;</del> <strong>1.799 &euro;</strong></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td><img src="imagenes/movil.png" alt="Imagen del móvil" /></td>
+    <td>
+      <h4><a href="#" title="Ver más información sobre el móvil">Móvil - 3G - Wi-Fi - 8 GB</a></h4>
+      <p><a href="#" title="Comprar el móvil">Comprar:</a> <del>399 &euro;</del> <strong>349 &euro;</strong></p>
+    </td>
+  </tr>
+</table>
+<br>
+
+<h3>Figura 7.5: Fusion de columnas</h3>
+<table>
+<tr>
+  <td colspan="2">A</td>
+</tr>
+
+<tr>
+  <td>B</td>
+  <td>C</td>
+</tr>
+</table>
+<br>
+
+
+<h3>Figura 7.6: Fusion de columnas2</h3>
+<table>
+<tr>
+  <td>A</td>
+  <td rowspan="2">B</td>
+</tr>
+
+<tr>
+  <td>C</td>
+</tr>
+</table>
+<br>
+
+<h3>Figura 7.7: Fusion de columnas3</h3>
+
+<table>
+<tr>
+  <td colspan="3">A</td>
+  <td>B</td>
+</tr>
+
+<tr>
+  <td>C</td>
+  <td colspan="2">D</td>
+  <td>E</td>
+</tr>
+
+<tr>
+  <td colspan="4">F</td>
+</tr>
+
+<tr>
+  <td>G</td>
+  <td>H</td>
+  <td>I</td>
+  <td>J</td>
+</tr>
+</table>
+<br>
+
+
+<h3>Figura 7.8: Fusion de columnas4</h3>
+<table>
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td rowspan="3">C</td>
+    <td>D</td>
+  </tr>
+  <tr>
+    <td rowspan="2">E</td>
+    <td>F</td>
+    <td rowspan="3">G</td>
+  </tr>
+  <tr>
+    <td>H</td>
+  </tr>
+  <tr>
+    <td>I</td>
+    <td>J</td>
+    <td>K</td>
+  </tr>
+</table>
+<br>
+
+<h3>Figura 7.9 (Exercici13): Tabla compleja</h3>
+<table>
+  <caption>Tabla comparativa de las características técnicas de los reproductores MP3</caption>
+  <tr>
+    <th></th>
+    <th abbr="Reproductor mini" scope="col" colspan="3">
+      <img src="imagenes/mp3_pequeno_blanco.png" alt="Imagen del reproductor MP3 pequeño de color blanco" />
+      <img src="imagenes/mp3_pequeno_negro.png" alt="Imagen del reproductor MP3 pequeño de color negro" />
+      <br/><strong>MP3 mini</strong>
+    </th>
+    <th abbr="Reproductor estándar" scope="col" colspan="2">
+      <img src="imagenes/mp3_grande_blanco.png" alt="Imagen del reproductor MP3 grande de color blanco" />
+      <img src="imagenes/mp3_grande_negro.png" alt="Imagen del reproductor MP3 grande de color negro" />
+      <br/><strong>MP3 grande</strong>
+    </th>
+  </tr>
+
+  <tr>
+    <th scope="row" abbr="Capacidad">Capacidad de almacenamiento</th>
+      <td>4GB <br/> (1.000 canciones)</td>
+      <td>8GB <br/> (2.000 canciones)</td>
+      <td>16GB <br/> (4.000 canciones)</td>
+      <td>30GB <br/> (7.500 canciones)</td>
+      <td>80GB <br/> (20.000 canciones)</td>
+    </tr>
+
+  <tr>
+    <th scope="row" abbr="Colores disponibles">Colores</th>
+    <td>
+      <img src="imagenes/color_blanco.png" alt="Color blanco" />
+    </td>
+    <td>
+      <img src="imagenes/color_negro.png" alt="Color blanco" />
+      <img src="imagenes/color_verde.png" alt="Color verde" />
+      <img src="imagenes/color_azul.png" alt="Color azul" />
+      <img src="imagenes/color_rosa.png" alt="Color rosa" />
+    </td>
+    <td>
+      <img src="imagenes/color_negro.png" alt="Color negro" />
+    </td>
+    <td colspan="2">
+      <img src="imagenes/color_blanco.png" alt="Color blanco" />
+      <img src="imagenes/color_negro.png" alt="Color negro" />
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" abbr="Tamaño de pantalla">Pantalla</th>
+    <td colspan="3">LCD de 3 cm (diagonal) con retroiluminación</td>
+    <td colspan="2">LCD de 6 cm (diagonal) con retroiluminación</td>
+  </tr>
+
+  <tr>
+    <th rowspan="2" scope="row" abbr="Tiempo de carga">Tiempo de carga</th>
+    <td rowspan="2" colspan="3">Unas 3 horas</td>
+    <td colspan="2">Unas 4 horas</td>
+  </tr>
+
+  <tr>
+    <td colspan="2">Unas 2 horas para alcanzar el 80% de la capacidad</td>
+  </tr>
+</table>
+<br>
+
+
+<h3>Figura 7.11 : Tabla de ventas</h3>
+
+<table>
+  <caption>Análisis de ventas anuales</caption>
+  <thead>
+    <tr>
+      <th rowspan="2" scope="col">AÑO</th>
+      <th colspan="4" scope="col">Expansión de ventas</th>
+    </tr>
+    <tr>
+      <th scope="col">Producto A</th>
+      <th scope="col">Producto B</th>
+      <th scope="col">Producto C</th>
+      <th scope="col">Producto D</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <th scope="row">N-3</th><td>-</td><td>-</td><td>-</td><td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">N-2</th><td>3</td><td>5</td><td>8</td><td>4</td>
+    </tr>
+    <tr>
+      <th scope="row">N-1</th><td>4</td><td>4</td><td>7</td><td>3</td>
+    </tr>
+    <tr>
+      <th scope="row">N</th><td>5</td><td>7</td><td>6</td><td>2</td>
+    </tr>
+  </tbody>
+  
+  <tfoot>
+    <tr>
+      <th rowspan="2" scope="col">AÑO</th>
+      <th scope="col">Producto A</th>
+      <th scope="col">Producto B</th>
+      <th scope="col">Producto C</th>
+      <th scope="col">Producto D</th>
+    </tr>
+    <tr>
+      <th colspan="4" scope="col">Expansión de ventas</th>
+    </tr>
+  </tfoot>
+
+
+</table>
+<br>
+
+<h3>Figura 7.12 : Tabla de ventas anuales</h3>
+
+<table>
+  <caption>Análisis de ventas anuales</caption>
+
+ 
+
+  <thead>
+    <tr>
+      <th scope="col">AÑO</th>
+      <th scope="col">Producto A</th>
+      <th scope="col">Producto B</th>
+      <th scope="col">Producto C</th>
+      <th scope="col">Producto D</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th scope="row">N-3</th><td>-</td><td>-</td><td>-</td><td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">N-2</th><td>3</td><td>5</td><td>8</td><td>4</td>
+    </tr>
+    <tr>
+      <th scope="row">N-1</th><td>4</td><td>4</td><td>7</td><td>3</td>
+    </tr>
+    <tr>
+      <th scope="row">N</th><td>5</td><td>7</td><td>6</td><td>2</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+
+
+
+<h3>Figura 7.13 : Tabla de ventas anuales con color</h3>
+<table>
+  <caption>Análisis de ventas anuales</caption>
+ 
+
+
+  <thead>
+    <tr>
+      <th scope="col">AÑO</th>
+      <th scope="col">Producto A</th>
+      <th scope="col">Producto B</th>
+      <th scope="col">Producto C</th>
+      <th scope="col">Producto D</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th scope="row">N-3</th><td>-</td><td>-</td><td>-</td><td>-</td>
+    </tr>
+    <tr>
+      <th scope="row">N-2</th><td>3</td><td>5</td><td>8</td><td>4</td>
+    </tr>
+    <tr>
+      <th scope="row">N-1</th><td>4</td><td>4</td><td>7</td><td>3</td>
+    </tr>
+    <tr>
+      <th scope="row">N</th><td>5</td><td>7</td><td>6</td><td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</body>
+
+</html>

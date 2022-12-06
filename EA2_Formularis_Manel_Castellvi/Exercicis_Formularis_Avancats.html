@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang ="es">
+
+<head>
+<title>Capitulo2</title>
+<meta charset="UTF-8">
+</head>
+
+<body style="background-color:#9ddeff;">
+<h1>Capítulo 8. Exercicis Formularis Avançats</h1>
+<h4><a href="index_DocTreballForm.html" title="Index" style="color:#000000"> &raquo; Index</a></h4>
+
+
+<h3 style="color:#131524">Figura 8.13:Fieldset y legend </h3><!-- Utilitzar el fielset i el legend-->
+<form action="form.php" method="post">
+  <fieldset>
+    <legend>Datos personales</legend>
+    Nombre <br/>
+    <input type="text" name="nombre" value="" />
+    <br/>
+    Apellidos <br/>
+    <input type="text" name="apellidos" value="" />
+    <br/>
+    DNI <br/>
+    <input type="text" name="dni" value="" size="10" maxlength="9" />
+  </fieldset>
+
+  <fieldset>
+    <legend>Datos de conexión</legend>
+    Nombre de usuario<br/>
+    <input type="text" name="nombre" value="" maxlength="10" />
+    <br/>
+    Contraseña<br/>
+    <input type="password" name="password" value="" maxlength="10" />
+    <br/>
+    Repite la contraseña<br/>
+    <input type="password" name="password2" value="" maxlength="10" />
+  </fieldset>
+</form>
+
+<h3 style="color:#1c2243">Figura 8.14:Etiqueta textarea </h3><!-- Utilitzar la etiqueta textarea-->
+<form action="form.php" method="post">
+
+<label for="nombre">Nombre del producto</label> <br/>
+<input type="text" id="nombre" name="nombre" value="" />
+
+<label for="descripcion">Descripción del producto</label> <br/>
+<textarea id="descripcion" name="descripcion" cols="40" rows="5"></textarea>
+
+</form>
+
+<h3 style="color:#223064">Figura 8.15:Etiqueta select </h3><!-- Utilitzar la etiqueta select-->
+<form action="form.php" method="post">
+
+<label for="so">Sistema operativo</label> <br/>
+<select id="so" name="so">
+  <option value="" selected="selected">- selecciona -</option>
+  <option value="windows">Windows</option>
+  <option value="mac">Mac</option>
+  <option value="linux">Linux</option>
+  <option value="otro">Otro</option>
+</select>
+
+<label for="so2">Sistema operativo</label> <br/>
+<select id="so2" name="so2" size="5">
+  <option value="windows" selected="selected">Windows</option>
+  <option value="mac">Mac</option>
+  <option value="linux">Linux</option>
+  <option value="otro">Otro</option>
+</select>
+
+<label for="so3">Sistema operativo</label> <br/>
+<select id="so3" name="so3" size="5" multiple="multiple">
+  <option value="windows" selected="selected">Windows</option>
+  <option value="mac">Mac</option>
+  <option value="linux">Linux</option>
+  <option value="otro">Otro</option>
+</select>
+
+</form>
+
+
+<h3 style="color:#273f87">Figura 8.16:Etiqueta optgroup </h3><!-- -->
+
+<form id="formulario" method="post" action="form.php">
+
+<label for="programa">Programa seleccionado</label> <br/>
+<select id="programa" name="programa">
+  <optgroup label="Sistemas Operativos">
+    <option value="Windows" selected="selected">Windows</option>
+    <option value="Mac">Mac</option>
+    <option value="Linux">Linux</option>
+    <option value="Other">Otro</option>
+  </optgroup>
+  <optgroup label="Navegadores">
+    <option value="Internet Explorer">Internet Explorer</option>
+    <option value="Firefox">Firefox</option>
+    <option value="Safari">Safari</option>
+    <option value="Opera">Opera</option>
+    <option value="Other">Otro</option>
+  </optgroup>
+</select>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

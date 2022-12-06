@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang ="es">
+
+<head>
+<title>Capitulo2</title>
+<meta charset="UTF-8">
+</head>
+
+
+<body style="background-color:#9ddeff;">
+<h1>REGISTRO DE REPARACIÓN</h1>
+<h4><a href="index_DocTreballForm.html" title="Index" style="color:#000000"> &raquo; Index</a></h4>
+
+
+<form action="form.php" method="post">
+	<fieldset>
+	<legend><b>Informacion personal:</b></legend>
+	
+		<label for="nom">(<a style="color:#ff0000;">*</a>) Nombre:</label>
+		<input type="text" name="nombre" value="" id="nom"/>
+  
+		<br>
+		
+		<label for="apellido">(<a style="color:#ff0000;">*</a>) Apellido:</label>
+		<input type="text" name="apellido" value="" id="apellido"/>
+  
+		<br>
+		
+		<label for="correo">(<a style="color:#ff0000;">*</a>) Correo:</label>
+		<input type="email" name="email" value="" id="correo"/>
+  
+		<br>
+		
+		<label for="telef">(<a style="color:#ff0000;">*</a>) Telefono:</label>
+		<input type="tel" name="telefono" value="" maxlength="9" id="telef"/>
+		
+		<br> 
+  
+		<label for="nac">Nacimiento:</label>
+		<input type="date" name="nac" value="" id="nac"/>
+  
+		<br>
+		<label for="pais">Pais:</label>
+		<input list="paises" name="pais" id="pais">
+
+			<datalist id="paises">
+			<option value="España">
+			<option value="Francia">
+			<option value="Italia">
+			<option value="Andorra">
+			<option value="Portugal">
+			</datalist> 
+   
+	</fieldset>
+	
+
+
+	<fieldset>
+	<legend><b>Reparación:</b></legend>
+	
+		<label for="reparar">(<a style="color:#ff0000;">*</a>) Ordenadores a reparar?</label>
+		<input type="number" name="reparar" value="" min="1" max="10" id="reparar"/>
+  
+		<br>
+  
+		<label for="hora">Hora recogida:</label>
+		<input list="horas" name="hora" id="hora">
+
+			<datalist id="horas">
+			<option value="10:00">
+			<option value="11:00">
+			<option value="12:00">
+			<option value="15:00">
+			<option value="16:00">
+			<option value="17:00">
+			</datalist> 
+  
+	</fieldset>
+	
+	
+	<fieldset>
+	<legend><b>Autorización:</b></legend>
+	
+		<label for="autorit">Autorizo que se utlizen mis datos personales de mi opinion en un cartel publicitario:</label>
+		<input type="radio" name="be" value="be" id="autorit"/> SI
+		<input type="radio" name="regular" value="autorit" /> NO
+		
+		<br>
+		
+		<p>(<a style="color:#ff0000;">*</a>) Campos obligatorios<p>
+	</fieldset>
+  
+	<br>
+	
+	<input type="reset" name="limpiar" value="Borrar datos" />
+	<input type="submit" value="Enviar datos" />
+  
+  
+  
+
+  
+</form>
+  
+
+
+
+
+
+
+
+
+</body>
+
+</html>

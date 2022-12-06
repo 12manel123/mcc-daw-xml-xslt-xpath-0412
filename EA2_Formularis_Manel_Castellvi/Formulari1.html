@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang ="es">
+
+<head>
+<title>Capitulo2</title>
+<meta charset="UTF-8">
+</head>
+
+<body style="background-color:#9ddeff;">
+<h1>FORMULARIO OPINION PERSONAL</h1>
+<h4><a href="index_DocTreballForm.html" title="Index" style="color:#000000"> &raquo; Index</a></h4>
+
+
+<form action="form.php" method="post">
+	<fieldset>
+	<legend>Informacion personal:</legend>
+	Nombre:
+  <input type="text" name="nombre" value="" />
+  <br>Apellido:
+  <input type="text" name="apellido" value="" />
+  <br>Contraseña:
+  <input type="password" name="contraseña" value="" />
+  <br>Provincias:
+  <select name="provincias">
+  <option value="" selected="selected">----</option>
+  <option value="windows">Tarragona</option>
+  <option value="mac">Barçelona</option>
+  <option value="linux">Lleida</option>
+  <option value="otro">Girona</option>
+</select>
+</fieldset>
+
+<fieldset>
+	<legend>Opinion:</legend>
+	
+	Que te ha parecido el diseño?:
+  <input type="radio" name="be" value="be"/> Bé
+  <input type="radio" name="regular" value="regular" /> Regular
+  <input type="radio" name="malament" value="malament"/> Malament
+Apartados web que te gustan mas?:
+  <input type="radio" name="be" value="be"/> Bé
+  <br>
+ Que apartados de la web te gustaron mas?:
+  <input type="checkbox" name="apartado" value="apartado"/> Inicio
+  <input type="checkbox" name="apartado" value="apartado"/> Indice
+  <input type="checkbox" name="apartado" value="apartado"/> Cuerpo de la pagina
+  <input type="checkbox" name="apartado" value="apartado"/> Comentarios
+ 
+ 
+</fieldset>
+	
+<fieldset>
+	<legend>Autorización:</legend>
+	Autorizo que se utlizen mis datos personales de mi opinion en un cartel publicitario:
+  <input type="radio" name="be" value="be"/> SI
+  <input type="radio" name="regular" value="regular" /> NO
+  <br>
+  
+ 
+ 
+ 
+</fieldset>
+  <br>
+  <input type="reset" name="limpiar" value="Borrar datos" />
+  <input type="submit" value="Enviar datos" />
+  
+  
+  
+  
+  <br/>
+  
+</form>
+  
+
+
+
+
+
+
+
+
+</body>
+
+</html>
