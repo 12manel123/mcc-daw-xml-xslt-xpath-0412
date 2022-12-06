@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tienda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="games.xsd">
+<videojocs>
+	<juego id="001">
+		<nomJ>lInKmAsK</nomJ>
+		<versio>2.4</versio>
+		<any>2003</any>
+		<exemplars>
+			<codi>235</codi>
+			<codi>457</codi>
+		</exemplars>
+		<companyia>Nintendo</companyia>
+	</juego>
+	<juego id="002">
+		<nomJ>hAlO</nomJ>
+		<versio>1.4</versio>
+		<any>2018</any>
+		<exemplars>
+			<codi>673</codi>
+			<codi>123</codi>
+		</exemplars>
+		<companyia>PlayStation</companyia>
+	</juego>
+	<juego id="003">
+		<nomJ>pOkEmOnY</nomJ>
+		<versio>2.4</versio>
+		<any>2014</any>
+		<exemplars>
+			<codi>573</codi>
+			<codi>258</codi>
+		</exemplars>
+		<companyia>GameFreack</companyia>
+	</juego>
+</videojocs>
+
+<socis>
+    <soci>
+      <DNI>48393670S</DNI>
+      <nomP>Albert</nomP>
+	  <apell>Juan Pedrales</apell>
+      <tlf>63456394</tlf>
+    </soci>
+    <soci>
+      <DNI>4867909D</DNI>
+      <nomP>Ryu</nomP>
+	  <apell>Monte Divino</apell>
+      <tlf>633434895</tlf>
+    </soci>
+	<soci>
+      <DNI>247535H</DNI>
+      <nomP>Mask</nomP>
+	  <apell>Mantel Albert</apell>
+      <tlf>348346898</tlf>
+    </soci>
+</socis>
+
+<prestecs>
+    <prestec dataP="15/4/2019" dataD="17/2/2021">
+	<dni>48393670S</dni>
+	<codiJoc>001</codiJoc>
+    </prestec>
+	<prestec dataP="22/4/2019" dataD="14/2/2021">
+	<dni>4867909D</dni>
+	<codiJoc>002</codiJoc>
+    </prestec>
+	<prestec dataP="27/5/2017" dataD="24/12/2020">
+	<dni>247535H</dni>
+	<codiJoc>002</codiJoc>
+    </prestec>
+</prestecs>
+
+</tienda>

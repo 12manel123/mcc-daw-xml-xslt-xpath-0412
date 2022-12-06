@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="smartphones">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="smartphone" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="operativeSystem" type="xs:string"/>
+            <xs:element name="dimensions" type="xs:string"/>
+            <xs:element name="weight" type="xs:string"/>
+			<xs:element name="screenResolution" type="xs:string"/>
+			<xs:element name="cpu" type="xs:string"/>
+			<xs:element name="space" type="xs:string"/>
+			<xs:element name="price" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+	    <xs:attribute name="pene" type="xs:string"/>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema> 

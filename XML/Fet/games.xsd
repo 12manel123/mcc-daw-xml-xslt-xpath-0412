@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- elements simples -->
+<xs:element name="nomJ">
+  <xs:simpleType>
+  <!--restriccio per nomes ficar lletres com minusc com mayus-->
+    <xs:restriction base="xs:string">
+     <xs:pattern value="([a-z][A-Z])+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="versio" type="xs:string"/>
+<xs:element name="companyia" type="xs:string"/>
+<xs:element name="any" type="xs:positiveInteger"/>
+<xs:element name="codi" type="xs:positiveInteger"/>
+<xs:element name="DNI" type="xs:string"/>
+<xs:element name="nomP" type="xs:string"/>
+<xs:element name="apell" type="xs:string"/>
+<xs:element name="tlf" type="xs:string"/>
+<xs:element name="dni" type="xs:string"/>
+<xs:element name="codiJoc" type="xs:string"/>
+
+
+<!-- atributs -->
+<xs:attribute name="id">
+<xs:simpleType>
+<!--restriccio per nomes introduir 3 digits en "codi"-->
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="[0-9][0-9][0-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:attribute>
+<xs:attribute name="dataP" type="xs:string"/>
+<xs:attribute name="dataD" type="xs:string"/>
+
+
+
+<!-- elements complexos/estructura -->
+<xs:element name="exemplars">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="codi"/>
+      <xs:element ref="codi"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="juego">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="nomJ"/>
+	  <xs:element ref="versio"/>
+      <xs:element ref="any"/>
+      <xs:element ref="exemplars" maxOccurs="unbounded"/>
+	  <xs:element ref="companyia"/>
+    </xs:sequence>
+	<xs:attribute ref="id"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="videojocs">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="juego" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="soci">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="DNI"/>
+      <xs:element ref="nomP"/>
+	  <xs:element ref="apell"/>
+      <xs:element ref="tlf"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="socis">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="soci" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="prestec">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="dni"/>
+      <xs:element ref="codiJoc"/>
+    </xs:sequence>
+      <xs:attribute ref="dataP"/>
+      <xs:attribute ref="dataD"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="prestecs">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="prestec" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="tienda">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="videojocs" maxOccurs="unbounded"/>
+      <xs:element ref="socis" maxOccurs="unbounded"/>
+      <xs:element ref="prestecs" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

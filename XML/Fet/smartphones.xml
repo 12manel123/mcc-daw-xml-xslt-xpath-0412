@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="smartphones.xsd">
+<telefon>
+   <nom>Apple</nom>
+   <SO>iOS</SO>
+   <dimenc>10x15x5</dimenc>
+   <pes>15gr</pes>
+   <resoluc>1240x1320</resoluc>
+   <memory>64kg</memory>
+   <preu>890€</preu>
+</telefon>
+
+<telefon>
+   <nom>Samsung</nom>
+   <SO>Android</SO>
+   <dimenc>18x16x4</dimenc>
+   <pes>25gr</pes>
+   <resoluc>1320x1480</resoluc>
+   <memory>516kg</memory>
+   <preu>570€</preu>
+</telefon>
+</movil>

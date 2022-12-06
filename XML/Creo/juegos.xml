@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videojocs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="juegos.xsd">
+<empresa>
+	<nomE>Nintendo</nomE>
+	<joc id="3d">
+		<nomJ>Pokemon xy</nomJ>
+		<versio>2.4</versio>
+		<any>2014</any>
+		<exemplars>
+			<exemplar id="01">
+				<prestec dataP="23/4/2020" dataD="24/2/2021">
+				<dni>4839350F</dni>
+				<nomP>Juan</nomP>
+				<telef>639496394</telef>
+				</prestec>
+			</exemplar>
+			<exemplar id="02">
+				<prestec dataP="25/4/2020" dataD="14/2/2021">
+				<dni>4833350G</dni>
+				<nomP>Pepito</nomP>
+				<telef>639492935</telef>
+				</prestec>
+			</exemplar>
+			<exemplar id="03">
+				<prestec dataP="25/6/2020" dataD="17/2/2021">
+				<dni>4833380G</dni>
+				<nomP>Elisa</nomP>
+				<telef>634563635</telef>
+				</prestec>
+			</exemplar>
+		</exemplars>
+	</joc>
+	<joc id="GQ">
+		<nomJ>Mario Gamecube</nomJ>
+		<versio>1.4</versio>
+		<any>2006</any>
+		<exemplars>
+			<exemplar id="01">
+				<prestec dataP="23/5/2017" dataD="24/3/2021">
+				<dni>4839680S</dni>
+				<nomP>Mariano</nomP>
+				<telef>639386394</telef>
+				</prestec>
+			</exemplar>
+			<exemplar id="02">
+				<prestec dataP="26/4/2014" dataD="14/8/2021">
+				<dni>4833339D</dni>
+				<nomP>Jaime</nomP>
+				<telef>633457895</telef>
+				</prestec>
+			</exemplar>
+		</exemplars>
+	</joc>
+</empresa>
+<empresa>
+	<nomE>Play station</nomE>
+	<joc id="RDRnew">
+		<nomJ>RDR2</nomJ>
+		<versio>5.2</versio>
+		<any>2018</any>
+		<exemplars>
+			<exemplar id="01">
+				<prestec dataP="22/4/2019" dataD="14/2/2021">
+				<dni>4879350F</dni>
+				<nomP>Jose</nomP>
+				<telef>639532394</telef>
+				</prestec>
+			</exemplar>
+			<exemplar id="02">
+				<prestec dataP="15/4/2019" dataD="17/2/2021">
+				<dni>4833355P</dni>
+				<nomP>Manuel</nomP>
+				<telef>639493867</telef>
+				</prestec>
+			</exemplar>
+		</exemplars>
+	</joc>
+	<joc id="GTAny">
+		<nomJ>GTA IV</nomJ>
+		<versio>7.4</versio>
+		<any>2016</any>
+		<exemplars>
+			<exemplar id="01">
+				<prestec dataP="27/5/2017" dataD="24/12/2020">
+				<dni>48393670S</dni>
+				<nomP>Albert</nomP>
+				<telef>63456394</telef>
+				</prestec>
+			</exemplar>
+			<exemplar id="02">
+				<prestec dataP="26/4/2014" dataD="14/8/2021">
+				<dni>4867909D</dni>
+				<nomP>Rock</nomP>
+				<telef>633434895</telef>
+				</prestec>
+			</exemplar>
+		</exemplars>
+	</joc>
+</empresa>
+</videojocs>

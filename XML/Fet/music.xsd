@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<!-- Elements simples -->
+<xs:element name="llista" type="xs:string"/>
+<xs:element name="nomL" type="xs:string"/>
+<xs:element name="data" type="xs:string"/>
+<xs:element name="cancons" type="xs:string"/>
+<xs:element name="canco" type="xs:string"/>
+<xs:element name="nomC" type="xs:string"/>
+<xs:element name="id" type="xs:string"/>
+<xs:element name="autor" type="xs:string"/>
+<xs:element name="durada" type="xs:string"/>
+
+
+<!-- Estructura complexe de "compte" -->
+<xs:element name="compte">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="llista" maxOccurs="unbounded">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nomL" maxOccurs="unbounded">
+				<xs:simpleType>
+				<!--Restriccio per a que solament estiguin Jazz, dance i Rock-->
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="Rock|Dance|Jazz"/>
+                </xs:restriction>
+            </xs:simpleType>
+			</xs:element>
+				<xs:element ref="data"/>
+				<xs:element name="cancons">
+					<xs:complexType>
+						<xs:sequence>						
+							<xs:element name="canco" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="nomC"/>
+										<xs:element name="id" maxOccurs="unbounded">
+										<xs:simpleType>
+										<!--Renstricció per a que solament es pucqui inserrtar de 1 al 10-->
+											<xs:restriction base="xs:integer">
+												<xs:pattern value="[0-9][0-9]"/>
+											</xs:restriction>
+										</xs:simpleType>
+										</xs:element>
+										<xs:element ref="autor"/>
+										<xs:element ref="durada"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>				
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

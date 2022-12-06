@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<!-- Elements simples -->
+<xs:element name="nom" type="xs:string"/>
+<xs:element name="SO" type="xs:string"/>
+<xs:element name="dimenc" type="xs:string"/>
+<xs:element name="pes" type="xs:string"/>
+<xs:element name="resoluc" type="xs:string"/>
+<xs:element name="memory" type="xs:string"/>
+<xs:element name="preu" type="xs:string"/>
+
+
+<!-- Estructura de "telefon" -->
+<xs:element name="telefon">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="nom">
+        <xs:simpleType>
+		<!--Restriccio per a que en num maxim sigui 40-->
+          <xs:restriction base="xs:string">
+           <xs:maxLength value="40"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element ref="SO"/>
+      <xs:element ref="dimenc"/>
+      <xs:element ref="pes"/>
+      <xs:element name="resoluc">
+	  <xs:simpleType>
+	  <!--Restriccio per a que hi hagin 4 caracters, una x i 4 caracters mes-->
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[0-9][0-9][0-9][0-9]x[0-9][0-9][0-9][0-9]"/>
+            </xs:restriction>
+       </xs:simpleType>
+	   </xs:element>
+      <xs:element ref="memory"/>
+      <xs:element ref="preu"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<!--Estructura de "movil"-->
+<xs:element name="movil">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="telefon" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

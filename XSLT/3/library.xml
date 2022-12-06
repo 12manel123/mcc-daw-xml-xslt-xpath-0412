@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="application/xml" href="library.xsl"?>
+<?xml-stylesheet type="text/xsl" href="EA2_2XSLTej3.xsl"?>
+<library>
+
+  <book>
+   <title language="es">Sherlock Holmes: Obras Completas</title>
+   <author>Arthur Conan Doyle</author>
+
+   <edition>
+      <publisher>Gramercy</publisher>
+      <year>2002</year>
+      <isbn>0517220784</isbn>
+      <pages>480</pages>
+   </edition>
+  </book>
+
+
+  <book>
+   <title language="es">Obras Completas de Edgar Allan Poe</title>
+   <author>Edgar Allan Poe</author>
+
+   <edition>
+      <publisher>Doubleday</publisher>
+      <year>1984</year>
+      <isbn>0385074077</isbn>
+      <pages>832</pages>
+   </edition>
+  </book>
+
+
+  <book>
+   <title language="es">Un mundo feliz</title>
+   <author>Aldous Huxley</author>
+
+   <edition>
+      <publisher>DeBolsillo</publisher>
+      <year>2006</year>
+      <isbn>8497594258</isbn>
+      <pages>255</pages>
+   </edition>
+  </book>
+
+
+  <book>
+   <title language="es">La conjura de los necios</title>
+   <author>John Kennedy Toole</author>
+
+   <edition>
+      <publisher>Editorial Anagrama</publisher>
+      <year>2005</year>
+      <isbn>8433920421</isbn>
+      <pages>365</pages>
+   </edition>
+  </book>
+
+</library>

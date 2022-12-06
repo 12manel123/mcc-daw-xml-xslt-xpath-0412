@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<!-- Elementos simples -->
+<xs:element name="llista" type="xs:string"/>
+<xs:element name="nomL" type="xs:string"/>
+<xs:element name="data" type="xs:string"/>
+<xs:element name="cancons" type="xs:string"/>
+<xs:element name="canco" type="xs:string"/>
+<xs:element name="nomC" type="xs:string"/>
+<xs:element name="id" type="xs:string"/>
+<xs:element name="autor" type="xs:string"/>
+<xs:element name="durada" type="xs:string"/>
+
+
+<!-- Elementos complex -->
+<xs:element name="compte">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="llista" maxOccurs="unbounded">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nomL"/>
+				<xs:element ref="data"/>
+				<xs:element name="cancons">
+					<xs:complexType>
+						<xs:sequence>						
+							<xs:element name="canco" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="nomC"/>
+										<xs:element ref="id"/>
+										<xs:element ref="autor"/>
+										<xs:element ref="durada"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>				
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

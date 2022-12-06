@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compte xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="music.xsd">
+<llista>
+	<nomL>Jazz</nomL>
+	<data>18_11_2020</data>
+	<cancons>
+	<canco>
+		<nomC>Karma</nomC>
+		<id>01</id>
+		<autor>AKR</autor>
+		<durada>3:24</durada>
+	</canco>
+	<canco>
+		<nomC>Never side</nomC>
+		<id>02</id>
+		<autor>Link Ronan</autor>
+		<durada>3:23</durada>
+	</canco>
+	</cancons>
+</llista>
+<llista>
+	<nomL>Rock</nomL>
+	<data>19_12_2019</data>
+	<cancons>
+	<canco>
+		<nomC>Blood&amp;moon</nomC>
+		<id>01</id>
+		<autor>Simon Nird</autor>
+		<durada>3:24</durada>
+	</canco>
+	<canco>
+		<nomC>Miare Lye</nomC>
+		<id>02</id>
+		<autor>Mardi Trecer</autor>
+		<durada>3:23</durada>
+	</canco>
+	</cancons>
+</llista>
+</compte>

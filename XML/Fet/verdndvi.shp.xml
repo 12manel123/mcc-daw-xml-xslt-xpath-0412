@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="verdndvi.shp.xsd">
+	<Esri>
+		<CreaDate>20170303</CreaDate>
+		<CreaTime>13485200</CreaTime>
+		<ArcGISFormat>1.0</ArcGISFormat>
+		<SyncOnce>TRUE</SyncOnce>
+		<DataProperties>
+			<lineage>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.2\ArcToolbox\Toolboxes\Conversion Tools.tbx\RasterToPolygon" Time="134538" Year="2015" Month="03" Day="23">RasterToPolygon ndvi40cmICGC2011bcn03ras X:\mediAmbient\C010756NDVI\GIS\1treball\geodata\m\ndviBcn03base.gdb\ndvi40cmICGC2011bcn04pol SIMPLIFY Value</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.2\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Time="142208" Year="2015"  Month="06" Day="22">CalculateField ndvi40cmICGC2011bcn04pol verd "V" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.2\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Time="142358" Year="2015"  Month="06" Day="22">CalculateField ndvi40cmICGC2011bcn04pol verd "NV" VB #</Process>
+			</lineage>
+		</DataProperties>
+	</Esri>
+</metadata>
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ins><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"/><link type="text/css" rel="stylesheet" id="dark-mode-general-link"/><style lang="en" type="text/css" id="dark-mode-custom-style"/><style lang="en" type="text/css" id="dark-mode-native-style"/>
+<moduls>
+
+<modul>
+<nom>Ap.Web</nom>
+<curs>2</curs>
+<hores>4</hores>
+<cicles>
+<cicle>SMX</cicle>
+</cicles>
+</modul>
+
+<modul>
+<nom>Gestio de dades</nom>
+<curs>1</curs>
+<hores>5</hores>
+<cicles>
+<cicle>ASIX</cicle>
+</cicles>
+</modul>
+
+<modul>
+<nom>Lleg.marques</nom>
+<curs>1</curs>
+<hores>3</hores>
+<cicles>
+<cicle>DAW</cicle>
+<cicle>ASIX</cicle>
+</cicles>
+</modul>
+
+<modul>
+<nom>Implantacio d'app web</nom>
+<curs>2</curs>
+<hores>2</hores>
+<cicles>
+<cicle>ASIX</cicle>
+</cicles>
+</modul>
+</moduls>
+
+<cicles> 
+  <cicle id="ASIX">
+  <nom>Administracio de Sistemes Informàtics i  Xarxes</nom>
+  <grau>Superior</grau>
+  <decret any="2009"/>
+  
+  </cicle>
+<cicle id="DAW">
+  <nom>Desenvolupament d'Aplicacions Web</nom>
+  <grau>Superior</grau>
+  <decret any="2010"/>
+  </cicle>
+
+<cicle id="DAM">
+  <nom>Desenvolupament d'Aplicacions Multiplataforma</nom>
+  <grau>Superior</grau>
+  <decret any="2010"/>
+  </cicle>
+<cicle id="SMX">
+  <nom>Sistemes Microinformàtics i Xarxes</nom>
+  <grau>Mitja</grau>
+  <decret any="2008"/>
+  </cicle>
+
+</cicles>
+</ins>

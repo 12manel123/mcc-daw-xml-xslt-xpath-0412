@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Elements simples -->
+<xs:element name="CreaDate" type="xs:string"/>
+<xs:element name="CreaTime" type="xs:string"/>
+
+<!-- Atributs -->
+<xs:attribute name="ToolSource" type="xs:string"/>
+<xs:attribute name="Time" type="xs:string"/>
+
+
+
+
+<!-- Elements complexos/estructura -->
+<xs:element name="lineage">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="Process" maxOccurs="unbounded">
+			  <xs:complexType>
+				<xs:simpleContent>
+					<xs:extension base="xs:string">
+						<xs:attribute ref="ToolSource"/>
+						<xs:attribute ref="Time"/>
+						<xs:attribute name="Year">
+							<xs:simpleType>
+							<!--Restriccio per introduir solament 4 digits en atribut Year-->
+								<xs:restriction base="xs:string">
+									<xs:pattern value="[0-9][0-9][0-9][0-9]"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="Month">
+							<xs:simpleType>
+							<!--Restriccio per introduir solament 2 digits en atribut Month-->
+								<xs:restriction base="xs:string">
+									<xs:pattern value="[0-9][0-9]"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="Day">
+							<xs:simpleType>
+							<!--Restriccio per introduir solament 2 digits en atribut Day-->
+								<xs:restriction base="xs:string">
+									<xs:pattern value="[0-9][0-9]"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:extension>
+				</xs:simpleContent>
+			</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="DataProperties">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="lineage" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="Esri">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="CreaDate"/>
+			<xs:element ref="CreaTime"/>
+			<xs:element name="ArcGISFormat">
+			<xs:simpleType>
+			<!--Restriccio per introduir solament 1 digits i 1 decimal-->
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9].[0-9]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SyncOnce">
+			<xs:simpleType>
+			<!--Restriccio per introduir solament True o false-->
+					<xs:restriction base="xs:string">
+						<xs:pattern value="TRUE|FALSE"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element ref="DataProperties"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="metadata">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="Esri"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>

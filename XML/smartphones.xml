@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smartphones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="smartphones.xsd">
+	<smartphone>
+		<name>Blackberry</name>
+		<operativeSystem>Haiguay</operativeSystem>
+		<dimensions>3cm,5m,2mm</dimensions>
+		<weight>50kg</weight>
+		<screenResolution>500px</screenResolution>
+		<cpu>Intel i7 7700</cpu>
+		<space>500GB</space>
+		<price>690</price>
+	</smartphone>
+	<smartphone>
+		<name>Playstation 5</name>
+		<operativeSystem>Xbox Series S</operativeSystem>
+		<dimensions>10km,5gm,3lm</dimensions>
+		<weight>50nm</weight>
+		<screenResolution>999px</screenResolution>
+		<cpu>Nvidia GTX 1060 6GB</cpu>
+		<space>500MB</space>
+		<price>999</price>
+	</smartphone>
+</smartphones>
